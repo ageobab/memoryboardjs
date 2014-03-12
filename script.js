@@ -34,13 +34,22 @@ $(function() {
     }
   }
 
+  function heading_animate() {
+    $("h1").animate({
+      opacity: 1,
+      left: "+=50",
+    }, 5000, function() {
+
+    });
+  }
+
+  heading_animate();
   greeting();
 
   function toggler() {
     $(".box").click(function() {
       $(this).toggleClass("hide");
     });
-
   }
   toggler();
 });
